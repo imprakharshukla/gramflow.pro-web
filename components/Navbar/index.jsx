@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Brand from "../Brand";
 import NavLink from "../NavLink";
+import { RiGithubFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [state, setState] = useState(false);
@@ -97,6 +98,12 @@ const Navbar = () => {
                   </li>
                 );
               })}
+              <li>
+              <NavLink className="block font-medium text-xl md:inline hover:text-gray-600 active:text-gray-900" href={"https://github.com/imprakharshukla/gramflow.pro-origin"}>
+                <RiGithubFill/>
+                </NavLink>
+
+              </li>
               <li>
                 <NavLink
                   href="https://6h36v1x0q8s.typeform.com/to/bXV3pMAg"
